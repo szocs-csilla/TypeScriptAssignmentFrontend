@@ -53,8 +53,6 @@ export class ClientComponent implements OnInit {
   }
 
   public deleteClient(id: number): void {
-    this.clientService.deleteClient(id).subscribe((client: any) => {
-      console.log(client);
-    });
+    this.clientService.deleteClient(id).subscribe();
   }
 }
